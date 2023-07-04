@@ -1,13 +1,13 @@
 # MOVIE RECOMMENDATION SYSTEM WITH SENTIMENT ANALYSIS
 
 ## Frontend
-- Flask (Python)
+- Flask
 - HTML/CSS
-- JQuery (Javascript)
+- JQuery
 
 ## Backend
-- Jupyter (Python)
-- NodeJS (Javascript)
+- Jupyter
+- NodeJS
 
 ## API
 - [TMDB](https://www.themoviedb.org/)
