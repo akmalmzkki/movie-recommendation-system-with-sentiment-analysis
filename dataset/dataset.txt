@@ -1,3 +1,4 @@
-credits.csv
-movie_metadata.csv
-movies_metadata.csv
+Dataset yang dibutuhkan:
+1. credits.csv
+2. movie_metadata.csv
+3. movies_metadata.csv
