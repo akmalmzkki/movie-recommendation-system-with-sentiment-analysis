@@ -1,6 +1,6 @@
 // API Key
 function my_api() {
-    return 'eef7bdda09ab793e9d40acae8f514be4';
+    return '';
 }
 
 // Mendapatkan semua detail cast 
