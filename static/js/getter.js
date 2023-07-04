@@ -1,3 +1,8 @@
+// API Key
+function my_api() {
+    return 'eef7bdda09ab793e9d40acae8f514be4';
+}
+
 // Mendapatkan semua detail cast 
 function get_individual_cast(movie_cast, my_api_key) {
     cast_bdays = [];
@@ -237,7 +242,7 @@ $(function() {
     source.addEventListener('input', inputHandler);
   
     $('.movie-button').on('click', function() {
-        var my_api_key = 'eef7bdda09ab793e9d40acae8f514be4';
+        var my_api_key = my_api();
         var title = $('.movie').val();
         if (title=="") {
             $('.results').css('display', 'none');
