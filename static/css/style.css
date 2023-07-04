@@ -64,10 +64,6 @@ h1 {
     text-shadow: #000000 0px 0px 13px;
 }
 
-.github-corner:hover .octo-arm {
-  	animation: octocat-wave 560ms ease-in-out;
-}
-
 h6 {
     margin-bottom: 20px;  
 }
@@ -135,20 +131,6 @@ h6 {
 .fail {
 	display: none;
 	color: white;
-}
-
-@keyframes octocat-wave {
-	0%, 100% {
-	  transform: rotate(0)
-	}
-  
-	20%, 60% {
-	  transform: rotate(-25deg)
-	}
-  
-	40%, 80% {
-	  transform: rotate(10deg)
-	}
 }
 
 @media only screen and (max-width: 650px) {
