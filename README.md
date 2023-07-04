@@ -7,6 +7,7 @@
 
 ## Backend
 - Jupyter (Python)
+- NodeJS (Javascript)
 
 ## API
 - [TMDB](https://www.themoviedb.org/)
