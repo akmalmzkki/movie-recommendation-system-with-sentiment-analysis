@@ -6,7 +6,7 @@
 - JQuery
 
 ## Backend
-- Jupyter
+- Python
 - NodeJS
 
 ## API
