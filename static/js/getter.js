@@ -14,11 +14,15 @@ function get_individual_cast(movie_cast, my_api_key) {
             type:'GET',
             url:'https://api.themoviedb.org/3/person/'+movie_cast.cast_ids[cast_id]+'?api_key='+my_api_key,
             async:false,
-            success: function(cast_details){
-            cast_bdays.push((new Date(cast_details.birthday)).toDateString().split(' ').slice(1).join(' '));
-            cast_bios.push(cast_details.biography);
-            cast_places.push(cast_details.place_of_birth);
-            }
+            success: function(cast_details) {
+                cast_bdays.push((new Date(cast_details.birthday)).toDateString().split(' ').slice(1).join(' '));
+                cast_bios.push(cast_details.biography);
+                cast_places.push(cast_details.place_of_birth);
+            },
+            error: function() {
+                alert("Invalid Request!");
+                $("#transparant-bg").delay(500).fadeOut("slow");
+                $("#loader").delay(500).fadeOut();
         });
     }
     return {
@@ -261,7 +265,7 @@ $(function() {
 
 // Ketika tombol direkomendasikan diklik, maka akan memanggil fungsi recommendcard
 function recommendcard(e) {
-    var my_api_key = 'eef7bdda09ab793e9d40acae8f514be4';
+    var my_api_key = my_api();
     var title = e.getAttribute('title'); 
     load_details(my_api_key, title);
 }
