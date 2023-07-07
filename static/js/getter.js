@@ -151,7 +151,11 @@ function show_details(movie_details, arr, movie_title, my_api_key, movie_id) {
             $('.results').html(response);
             $('#autoComplete').val('');
             $(window).scrollTop(0);
-        }
+        },
+        error: function() {
+            alert("API Error!");
+            $("#transparant-bg").delay(500).fadeOut("slow");
+            $("#loader").delay(500).fadeOut();
     });
 }
 
